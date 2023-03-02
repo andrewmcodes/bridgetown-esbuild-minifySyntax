@@ -51,6 +51,8 @@ bridgetown configure shoelace
 
 Not a major difference in size but still a reduction in JS and CSS size. Over time though this adds up!
 
-## TODO
+## Summary 
 
-- Try some more tweaks to the configurators.
+The results show that while the difference in JS size is not significant, the CSS size is reduced slightly in both cases. When there is actual JS to be minified, the difference in size is still not major but significant over time.
+
+However, this was done before [esbuild v0.17.0](https://github.com/evanw/esbuild/blob/main/CHANGELOG.md#0170) was released which had a lot of breaking changes that I haven't investigated fully so this may no longer apply. Regardless, it appears to help but not significantly under these circumstances and in my own personal site.
